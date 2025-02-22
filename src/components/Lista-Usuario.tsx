@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 
 interface Usuario {
-  id: number;
-  name: string;
+  userId: number;
+  username: string;
+  apellido: string;
 }
 
 export default function ListaUsuario() {
@@ -49,15 +50,16 @@ export default function ListaUsuario() {
         <ul className="divide-y divide-gray-700">
           {usuarios.map((usuario: Usuario) => (
             <li
-              key={usuario.id}
+              key={usuario.userId}
               className="py-4 flex items-center hover:bg-gray-900 px-4 rounded-lg transition-colors"
             >
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                {usuario.name.charAt(0)}
+                {usuario.username.charAt(0)}
               </div>
               <div>
-                <p className="text-sm font-medium text-white">{usuario.name}</p>
-                <p className="text-sm text-gray-400">ID: {usuario.id}</p>
+                <p className="text-sm font-medium text-white">{usuario.username}</p>
+                <p className="text-sm text-gray-400">ID: {usuario.userId}</p>
+                <p className="text-sm text-gray-400">Apellido: {usuario.apellido}</p>
               </div>
             </li>
           ))}
