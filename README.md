@@ -77,3 +77,28 @@ npm run dev
 ```
 
 ### CONEXIÓN CON PROYECTO ANTERIOR BACKEND (backend-nestjs)
+
+* Debe estar corriendo backend
+
+```
+http://localhost:3000/users
+```
+
+#### 6. Creo carpeta types con archivo usuario.ts
+
+```
+// Definición del tipo de usuario
+interface Usuario {
+  id: number
+  name: string
+}
+
+export type { Usuario }
+```
+
+
+
+
+
+
+
