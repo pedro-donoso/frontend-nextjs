@@ -63,16 +63,14 @@ export default function ListaUsuario() {
   return (
     // Contenedor principal
     <div className="container mx-auto p-4 bg-black">
-      // Lista de usuarios
+      Lista de usuarios
       {usuarios.length === 0 ? (
         // Mostrar mensaje de carga
         <div className="flex items-center justify-center p-4 text-gray-400">
           Cargando usuarios...
         </div>
       ) : (
-        // Lista de usuarios
           <ul className="divide-y divide-gray-700">
-          // Iterar sobre la lista de usuarios
             {usuarios.map((usuario: Usuario) => (
               <li
               // Clave única para cada usuario
