@@ -63,7 +63,6 @@ export default function ListaUsuario() {
   return (
     // Contenedor principal
     <div className="container mx-auto p-4 bg-black">
-      Lista de usuarios
       {usuarios.length === 0 ? (
         // Mostrar mensaje de carga
         <div className="flex items-center justify-center p-4 text-gray-400">
