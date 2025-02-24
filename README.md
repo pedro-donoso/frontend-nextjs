@@ -1,3 +1,5 @@
+![users](https://github.com/user-attachments/assets/fc86bc03-b62e-473f-942d-92f85951e6cf)
+
 ### FRONTEND NEXTJS
 
 #### 1. Creo un Proyecto Next.js:
